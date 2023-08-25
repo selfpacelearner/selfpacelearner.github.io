@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Menu bar</title>
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="#news">Navbar</a>
+      <a href="#home">Link</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Dropdown
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#link1">Link 1</a>
+          <a href="#link2">Link 2</a>
+          <a href="#link3">Link 3</a>
+        </div>
+      </div>
+      <a href="#">Link</a>
+    </div>
+    <h1 align="center">This is our page</h1>
+  </body>
+</html>
