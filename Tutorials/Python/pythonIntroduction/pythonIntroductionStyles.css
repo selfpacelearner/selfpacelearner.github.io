@@ -1,0 +1,66 @@
+
+/* universal css -> applied to each element of page*/
+
+* {
+	//background-color: powderblue;
+	//text-align: center;
+	//color: blue;
+	//margin:5px;
+}
+
+/* page header section */
+.header {
+  background-color: #F1F1F1;
+  margin: auto;
+  padding: 1px;
+  text-align: left;
+}
+
+/*Top navigation bar */
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  //position: -webkit-sticky; /* Safari */
+  //position: sticky;
+  top: 0;
+}
+
+ul.topnav li {float: left; padding: 0; margin: 0;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #04AA6D;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+
+/* page content */
+.pagecontent {
+  background-color: #ffffff;
+  padding: 0;
+  text-align: center;
+}
+
+
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  color: #FF8A5D;
+  padding: 50px;
+  text-align: center;
+}
