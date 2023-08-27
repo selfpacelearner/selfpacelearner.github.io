@@ -49,6 +49,53 @@ ul.topnav li.right {float: right;}
   ul.topnav li {float: none;}
 }
 
+/* side navigation*/
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 1;
+  left: 1;
+  background-color: #f1f1f1;
+  overflow-x: hidden;
+  padding-top: 10px;
+  overflow-y: scroll;
+}
+
+.sidenav a {
+  padding: 3px 3px 3px 15px;
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+  display: block;
+}
+
+.sidenav spam {
+  padding: 1px 1px 1px 5px;
+  text-decoration: none;
+  font-size: 20px;
+  color: blue;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: gray;
+}
+
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 18px;
+  padding: 0px 15px;
+  overflow-y: scroll;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 10px;}
+}
+
+
 /* page content */
 .pagecontent {
   background-color: #ffffff;
