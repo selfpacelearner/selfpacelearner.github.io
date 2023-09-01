@@ -1,65 +1,64 @@
-
-/* universal css -> applied to each element of page*/
-
+/* 
+	- necessary 4 property to normalize the webpage 
+*/
 * {
-	//background-color: powderblue;
-	//text-align: center;
-	//color: blue;
-	//margin:5px;
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;	/* control the border size */
+	font-family:Arial;
+ }
+
+
+/* 
+	- webpage header section 
+*/
+#webpageheader {
+	min-width:100%;
+	min-height:40px;
+	background-color:lightgray;
+	
+	padding-left:2%;
+	line-height:40px;	/*display text in the center of line */
+	margin-bottom:0px;	/* gap b/w one to another line */
 }
 
-/* page header section */
-.header {
-  background-color: #F1F1F1;
-  margin: auto;
-  padding: 1px;
-  text-align: left;
+
+
+/*
+	- Top navigation bar 
+*/
+#topnav {
+	min-width:100%;
+	min-height:35px;
+	background-color:#454545;
+	
+	padding-left:2%;
+	line-height:35px;	/*display text in the center of line */
+	text-align: left;
+	margin-bottom:0px;	/* gap b/w one to another line */
 }
 
-/*Top navigation bar */
-nav.topnav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  //position: -webkit-sticky; /* Safari */
-  //position: sticky;
-  top: 0;
-}
-
-nav.topnav li {float: left; padding: 0; margin: 0;}
-
-nav.topnav li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-nav.topnav li a:hover:not(.active) {background-color: #111;}
-
-nav.topnav li a.active {background-color: #04AA6D;}
-
-nav.topnav li.right {float: right;}
-
-@media screen and (max-width: 600px) {
-  nav.topnav li.right, 
-  nav.topnav li {float: none;}
-}
 
 /* page content */
-.pagecontent {
-  background-color: #ffffff;
-  padding: 0;
-  text-align: center;
+#pagecontent {
+	min-width:100%;
+	min-height:100%;
+	background-color:white;
+	
+	text-align: center;
+	text-color:white;
 }
 
 
-/* Style the footer */
-.footer {
-  background-color: #f1f1f1;
+
+
+
+
+/* 
+	footer section 
+*/
+#footer {
+  background-color:lightgray;
   color: #FF8A5D;
   padding: 50px;
   text-align: center;
