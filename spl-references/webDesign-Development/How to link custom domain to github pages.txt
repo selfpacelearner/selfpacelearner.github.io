@@ -21,6 +21,7 @@ Here's a general guide to help you through the process:
 
 >> A Record: 
    Create an "A" record that points to GitHub's primary IP address: 185.199.108.153
+   find Ip Address here: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain
    
    A Record: 
    Create three more "A" records with the following IP addresses: 185.199.109.153, 185.199.110.153, and 185.199.111.153
