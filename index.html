@@ -11,7 +11,7 @@
 			<!--<meta http-equiv="refresh" content="30"> -->	<!--auto refresh page after 30sec-->
 		</div>
 		
-		<title>&#128077selfPaceLearner: pro coder :)</title>
+		<title>selfPaceLearner: learn by doing :)</title>
 		
 		<link rel="stylesheet" href="./spl-css/spl-styles.css">
 		
@@ -25,10 +25,20 @@
 		</header>
 		
 		<!--Top Navigation bar-->
-		<nav id="topnav">
-			<a href="./index.html">Home</a>
-			<a href=".\Tutorials\tutorialMainPage.html">Tutorials</a>
+		<nav class="topnav">
+
+			<div id="menu">
+				<button class="openbtn" onclick="openNav()"> ☰ selfPaceLearner</button>  
+			</div>
+			
+			<div id="sidebar">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+				<a href="./index.html">Home</a>
+				<a href=".\spl-learnings\tutorialMainPage.html">Tutorials</a>
+			</div>
+
 		</nav>
+
 
 		<!--Page Content-->
 		<div id="pagecontent">
@@ -54,6 +64,9 @@
 				selfPaceLearner.
 			</p>
 		</footer>
+
+		<script src="./spl-js/spl-js.js"></script>
+		
 	</body> <!--End of Body element-->
 	
 </html>
