@@ -1,69 +1,65 @@
+
+
+/*--*******---Main Page Styles---*********/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 /* 
 	- necessary 4 property to normalize the webpage 
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-
 * {
-	margin:0px;
-	padding:0px;
+	margin:0%;
+	padding:0%;
 	box-sizing:border-box;	/* control the border size */
 	font-family: 'Poppins', sans-serif;
  }
 
 
-
 /* 
-	- webpage header section 
+	- styles for webpage header section 
 */
-#webpageheader {
+header {
 	min-width:100%;
-	min-height:35px;
+	min-height:2rem;
+	line-height:2rem;	/*display text in the center of line */
 	background-color:lightgray;
-	
-	
-	padding-left:2%;
-	margin-bottom:0px;	/* gap b/w one to another line */
 	font-size: 0.8rem;
-	line-height:35px;	/*display text in the center of line */
+	margin-bottom:0.05%;	/* gap b/w one to another line */
+	
 }
-#webpageheader a{
+header a{
 	text-decoration: none;
 }
-#webpageheader a:hover{
-	background-color: white;
+header a:hover{
+	color: red;
 }
-
 
 
 /*
-	- Top navigation bar 
+	- styles for  Top navigation bar 
 */
-.topnav {
+nav {
 	min-width:100%;
-	min-height:35px;
-	line-height:35px;	/*display text in the center of line */
+	min-height:2rem;
+	line-height:2rem;	/*display text in the center of line */
 	background-color:#454545;
-	
-	padding-left:2%;
-	
+	padding-left:1%;
 	text-align: left;
-	margin-bottom:0px;	/* gap b/w one to another line */
-	
+	margin-bottom:1%;	/* gap b/w one to another line */
 	position: -webkit-sticky; /* Safari */
 	position: sticky;
 	top: 0;
-
 }
-.topnav a{
+nav a{
 	color: white;
 	font-size: 1rem;
-	line-height:35px;
-	min-height:35px;
+	line-height:2rem;
+	min-height:2rem;
 	text-decoration: none;
 }
-.topnav a:hover{
-	background-color: green;
+nav a:hover{
+	color: red;
 }
 
 .openbtn {
@@ -75,12 +71,12 @@
 	border: none;
 }
 .openbtn:hover {
-	background-color: green;
+	background-color: red;
 }
 
 
 /* 
-	side bar 
+	styles for  side bar 
 */
 #sidebar {
 	width: 0%;
@@ -89,8 +85,8 @@
 	
 	transition: 0.5s;
 	position: fixed;
-	padding-top: 35px;
-	top: 35px;
+	padding-top: 2rem;
+	top: 2rem;
 	left: 0;
 	z-index: 1;
 	overflow-x: hidden;
@@ -104,58 +100,62 @@
 	transition: 0.8s;
 }
 #sidebar a:hover {
-	color: #f1f1f1;
+	color: red;
 }
 #sidebar .closebtn {
 	position: absolute;
 	top: 0;
-	right: 25px;
-	font-size: 20px;
-	margin-left: 50px;
+	right: 10%;
+	font-size: 1rem;
+	margin-left: 20%;
 }
 
 #menu {
 	transition: margin-left .5s;
-	padding: 2px;
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-	.sidebar {padding-top: 15px;}
-	.sidebar a {font-size: 18px;}
+	padding: 0.05%;
 }
 
 
+/* styles for  page content */
 
-
-
-
-
-
-/* page content */
+body {
+	padding:0.1%;
+}
 #pagecontent {
-	min-width:100%;
+	width:100%;
 	min-height:100%;
 	background-color:white;
-	
 	text-align: center;
-	text-color:white;
+	color:black;
+	font-family:Arial;
+	font-size: 0.9rem;
+	padding: 3%;
 }
 
-
-
-
+#whySpl {
+	width:100%;
+	min-height:100%;
+	background-color:hsla(0, 89%, 97%, 1);
+	font-family:Arial;
+	font-size: 0.9rem;
+	padding: 3%;
+	text-align:center;
+}
 
 /* 
-	footer section 
+	styles for footer section 
 */
-#footer {
+footer {
 	min-width:100%;
-	min-height:40px;
+	min-height:100%;
 	background-color:lightgray;
-	
 	color: #FF8A5D;
 	bottom: 0;
-	padding: 50px;
+	padding: 3%;
 	text-align: center;
 }
+
+
+
+/* styles for subpage if additional required */
+
