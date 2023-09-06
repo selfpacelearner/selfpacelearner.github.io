@@ -2,8 +2,6 @@
 
 /*--*******---Main Page Styles---*********/
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-
 /* 
 	- necessary 4 property to normalize the webpage 
 */
@@ -12,9 +10,8 @@
 	margin:0%;
 	padding:0%;
 	box-sizing:border-box;	/* control the border size */
-	font-family: 'Poppins', sans-serif;
+	font-family: Sans-Serif;
  }
-
 
 /* 
 	- styles for webpage header section 
@@ -83,7 +80,7 @@ nav a:hover{
 	height: 100%;
 	background-color: #000000;
 	
-	transition: 0.5s;
+	transition: 0.3s;
 	position: fixed;
 	padding-top: 2rem;
 	top: 2rem;
@@ -92,12 +89,12 @@ nav a:hover{
 	overflow-x: hidden;
 }
 #sidebar a {
-	padding: 4px 4px 4px 16px;
+	padding: 0px 0px 0px 32px;
 	text-decoration: none;
 	font-size: 1rem;
 	color: white;
 	display: block;
-	transition: 0.8s;
+	transition: 0.3s;
 }
 #sidebar a:hover {
 	color: red;
