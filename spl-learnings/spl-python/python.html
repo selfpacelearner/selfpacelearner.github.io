@@ -14,30 +14,51 @@
 		
 		<style>
 		
-			/* Container for flexboxes */
-			.row {
-				display: -webkit-flex;
-				display: flex;
+			h1{
+				font-size:1.5rem;
 			}
-
-			/* Create three unequal columns that sits next to each other */
-			.column {
-				padding: 2%;
+			p, li{
+				font-size:0.8rem;
+				line-height: 1.3rem;
+			}
+			
+			/* Container for flexboxes */
+			.box {
+				width:100%;
+				height:100%;
+				padding-top:2rem;
+				background-color:white;
+				
+				display: flex;
+				float: left;
 			}
 
 			/* Left and right column */
-			.column.side {
-				-webkit-flex: 1;
-				-ms-flex: 1;
-				flex: 1;
+			.sidebox {
+				width:20%;
 			}
 
 			/* Middle column */
-			.column.middle {
-				-webkit-flex: 2;
-				-ms-flex: 2;
-				flex: 5;
-				line-height:150%;
+			.databox {
+				width:60%;
+			}
+			
+			@media (max-width: 600px){
+				.databox {
+					width:98%;
+				}
+				
+				.sidebox {
+					width:2%;
+				}
+				
+				h1{
+					font-size:3vmax;
+				}
+				p, li{
+					font-size:2vmax;
+					line-height: 1.4rem;
+				}
 			}
 			
 		</style>
@@ -75,12 +96,12 @@
 		
 		<!--Page Content-->
 		
-		<div class="row">
-			<div class="column side">
+		<div class="box">
+			<div class="sidebox">
 				<!--nothing yet-->
 			</div>
 		  
-			<div class="column middle">
+			<div class="databox">
 				<h1>The Python Tutorial</h1><br>
 				
 				<p> Python is a popular general-purpose programming language.
@@ -91,7 +112,7 @@
 					machine learning, Data Science,Artificial Intelligence, Computer Vision or Image Processing Applications, web development, desktop applications, Mobile Applications, and many other fields.<br>
 					
 					<br>while SQL and HTML is a DSL, so SQL used for querying relational databases and HTML used for web-development.
-				</p>
+				</p><br>
 				
 				<p>
 					Python is a great language for beginners, who wanted to master the core concept of programming because of it's  easy syntax.
@@ -146,7 +167,7 @@
 				</p><br>
 			</div>
 		  
-			<div class="column side">
+			<div class="sidebox">
 				<!--nothing yet-->
 			</div>
 		  
