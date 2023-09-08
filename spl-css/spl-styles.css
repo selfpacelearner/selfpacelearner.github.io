@@ -1,17 +1,458 @@
 
+/* CSS Quick Reference 
 
-/*--*******---Main Page Styles---*********/
+>> CSS: Cascading Style Sheets?
 
-/* 
-	- necessary 4 property to normalize the webpage 
-*/
+	- CSS enhances the look and feel of the webpage.
 
+	- it used for markup language such as HTML, XML, etc.
+
+
+
+>> There are three different ways that we can add CSS for HTML:
+
+	1.Inline CSS: It contains CSS properties in the body section specified within HTML tags.
+
+		Ex: <tag style="property: value"> </tag>
+		
+		
+	2. Internal CSS or Embedded: CSS is embedded within the HTML file using a style HTML tag.
+
+		Ex: 
+			<style type="text/css">
+				div { 
+					color: #444;
+				}
+			</style>
+			
+	3. Include external CSS file: The external CSS file is linked to the HTML document using a link tag in the <head> Tag section.
+
+		Ex: <link rel="stylesheet" type="text/css" href="./style.css" />
+
+
+>> Clearfix: It clears floats to select or control margins and padding.
+
+	.clearfix::after {
+		content: "";
+		clear: both;
+		display: block; 
+	}
+	
+>> Selectors: Used to find or select the HTML elements you want to style. These are categorized as follows:
+
+	- Universal: Selects all elements on the pages.
+	
+		Ex: 
+			*{
+				property:value;
+			}
+	
+	- Type: Selects all HTML tag/element of given type in your document.
+	
+		Ex: 
+			p {
+				property:value;
+			}
+	
+	- id: Selects an element based on the value of its unique id attribute
+	
+		Ex: 
+			#id {
+				property:value;
+			}
+	- class: Selects all elements in the document that have the given class attribute.
+	
+		Ex: 
+			.class {
+				property:value;
+			}
+			
+	- Combinators: Complex selectors consisting of more than one selectors having some relationship between them.
+	
+		Ex: 
+			selector1 selector2/ selector 1+selector2 / selector 1> selector 2 {
+				property: value;
+			}
+			
+	- Attribute: Selects all elements that have a specified attribute.
+	
+		Ex: 
+			a[attribute=value] {
+				property:value;
+			}
+
+	- Pseudo: Define the special state of an element to add an effect to an existing element based on its states.
+	
+		Ex: 
+			selector: pseudo-class{
+				property: value;
+			}
+
+
+>> Font Properties:	
+
+	- Font-family: Specifies the font family to be used for the element’s text content.
+	
+		Ex:
+			font-family: family-name |generic-family |initial |inherit;
+			
+
+	- Font-style: Styles the text content in a normal, italic, or oblique face from its font-family.
+	
+		Ex: 
+			font-style:normal |italic |oblique |initial |inherit;
+		
+		
+	- Font-variant: Converts all lowercase letters into uppercase letters.
+	
+		Ex:
+			font-variant:normal| small caps | initial;
+
+	- Font-weight: Specifies thickness or weight of the font
+	
+		Ex: 
+			font-weight:normal| bold |number |initial |inherit |unset;
+
+
+
+	- Font-size: Specifies the size of the text in HTML document.
+	
+		ex: 
+			font-size:small |medium |large |initial |inherit;
+
+
+
+
+>> Text-properties:
+	
+	- color: Sets the color of the text.
+		
+		Ex: color: value;
+		
+		
+	- text-align: Defines the horizontal alignment of the text.
+	
+		Ex:
+			text-align:left|right|center|justify|initial|inherit;
+
+
+	- text-decoration: Add or remove text- decorations.
+	
+		Ex: 
+			text-decoration:decoration-type;
+
+
+	- text-transform: Changes the case(uppercase|lowercase) of text.
+
+		Ex: 
+			text-transform:none|capitalize|uppercase|lowercase|initial|inherit;
+
+
+	- text-indent: Indents the first line of text block.
+	
+		Ex:
+			text-indent:length|initial|inherit;
+
+
+	- letter-spacing: Specifies spacing between the characters of the text.
+	
+		Ex:
+			letter-spacing:normal|length|initial|inherit;
+
+
+	- line-height: Specifies the space between the lines of the text.
+	 
+		Ex: 
+			line-height:normal|number|length|percentage|initial|inherit;
+
+
+	- text-shadow: Adds shadow to the text.
+	
+		Ex: 
+			text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit
+
+
+	- word-spacing: Specifies space between words of lines.
+	
+		Ex: 
+			word-spacing:normal|length|initial|inherit;
+
+
+
+>> Background properties:
+
+	- background-color: Specifies the background color of an element.
+	
+		Ex: 
+			background-color:color_name;
+	
+	
+	- background-image: Adds one or more background images to an element.
+	
+		Ex: 
+			background-image:url(‘url’);
+
+
+	- background-repeat: Adds or remove repeat the background image both horizontally and vertically.
+	
+		Ex:
+			background-repeat:repeat|repeat-x|repeat-y|no-repeat|initial|inherit;
+
+
+	- background-position: Specifies the positioning of the image in a certain way.
+	
+		Ex:
+			background-position:value;
+
+	
+	- background-origin: Used to adjust the background image of the webpage.
+	
+		Ex:
+			background-origin:padding-box |border-box|content-box | initial| inherit;
+
+
+	- background-attachment: Specifies the kind of attachment of the background image in its container/td>
+	
+		Ex:
+			background-attachment:scroll|fixed|local|initial|inherit;
+
+
+	- background-clip: Used to define how far the background (color or image) should extend.
+	
+		Ex:
+			background-clip:border-box|padding-box|content-box|initial|inherit;
+
+
+
+>> Box Properties: 
+
+	- margin: value;	// Used to set the margin
+	
+	- padding: value;	// Specifies the space between the border and the content of the selector.
+	
+	- border: value;	// Sets the element’s border width and set the style, and color of an element’s border.
+	
+	- width: value;		// Used to set an element’s width.
+	
+	- height: value;	// Used to set an element’s height
+	
+	
+	
+	
+>> Shadow properties: used to add shadow to text or boxes or frames of elements.
+
+	- text-shadow:h-shadow v-shadow blur-radius color| none |initial | inherit;		// Adds shadow to text.
+	
+	- box-shadow:h-offset v-offset blur spread color |none |inset |initial | inherit;	// Gives shadow-like effect to the box or frames of an element.
+	
+	
+	
+>> Gradient: The CSS gradient property is used to create transition between two or more specified colors
+
+	- background-image:linear-gradient(direction, color-stop1, color-stop2, …);		// Creates smooth color transitions.
+	
+	- background-image:radial-gradient(shape size at position, start-color, …, last-color);		// Used to obtain an elliptical shape gradient.
+	
+	
+>> Border Properties: The CSS border properties allow you to specify how the border of the box representing an element should look.
+
+	- border-color:color-value;		// Specifies the color of the border of the box. Works only when the border-style property is defined.
+	
+	- border-style:value;		// Sets the style of the border as solid, dotted, rigged, etc.
+	
+	- border-width:length |thin |medium |thick |initial |inherit	// Sets the width of the border of the element.
+	
+	
+>> Classification Properties: allow you to specify how and where an element is displayed.
+
+	- display:inline|block|flex|grid|table|group|none|inherit;		// Defines how elements are displayed in the web page.
+	
+	- float:none|left|right|initial| inherit;	// Defines flow of content
+	
+	- position: fixed|static|absolute |relative |sticky;		// Specifies the positioning method of html entity on the web page.
+	
+	- clear:left|right|both|none;		// Sets the sides of an element where no other floating elements are allowed.
+	
+	- visibility:visible|hidden|collapse|initial|inherit;	// Set an element as visible or not.
+	
+	- cursor: auto|default|pointer|crosshair|help | e-resize | all-scroll |progress |initial |inherit;		// Specifies the type or shape of cursor
+	
+	
+>> CSS Functions: 
+
+	- attr( attr_name ); 	// Retrieves the value of an attribute of the selected elements
+	
+	- calc( Expression );	// Takes a single mathematical expression as its parameter and performs operations
+	
+	- max(value 1, value2, value3…)		// Returns the largest number of the given set of comma separated numbers.
+	
+	- url( <string> <url-modifier>* )		// Takes a string URL as a parameter and is used to load images, fonts and content
+	
+	- var( custom_property, value )		// Inserts the value of a custom property. Its name must start with two dashes.
+	
+	
+	
+>> Media Queries: The CSS Media Query is used to make the web page more responsive according to the different screens or media types.
+
+	@media not | only mediatype and (expression) {
+		// Code content
+	}
+
+	- All		- It is used for all media devices.
+	
+	- Print		- It is used when printer is in use.
+	
+	- Screen	- It is used for computer screens, smartphones etc.
+	
+	- Speech	- It is used for screen readers that read the screen aloud.
+	
+
+	
+	
+	
+===================================================	
+Responsive WebPage Layout Design using HTML, CSS*:
+***************************************************
+	
+>> some CSS common properties
+  
+  => viewport properties:
+	 - width:
+	 - height:
+	 - background-color:
+
+	 - margin:
+	 - padding:
+
+  => Text properties:
+	- font-size: 
+	- color:
+
+
+>> understanding Units:
+	
+	- px 			fixed value	
+	   
+   	- % 			100% = Relative to the parent element size
+
+   	- vw,vh			Relative to 1% of the width,height of the viewport*
+
+   	- vmax, vmin: 	vh and vw works at the same time
+
+   	- em			1em = font-size mentioned of parent element 
+					(Ex: 2em means 2 times the size of the current font)
+	
+	- rem 			Relative to font-size of the root element (viewport) and 1rem = 16px
+
+
+	Tip: The em and rem units are practical in creating perfectly scalable layout!       
+	* Viewport = the browser window size. If the viewport is 50cm wide, 1vw = 0.5cm.
+
+	
+
+>> website layout design:
+
+
+	- use id or class?
+	  
+		class is most used but both are same
+
+
+	- position: absolute or display: flex?
+	  
+		use display: flex to make your web responsive easily.
+
+
+	- flexbox:
+		- align-items: center;				// y-axis or cross-axis
+		- justify-content: center;			// x-axis
+		- justify-content: space-evenly;	//space b/w the element
+		- border: 1px solid #000;
+		- flex-wrap: wrap;
+		- flex-direction: column;
+		
+		
+	- CSS media Queries:
+		
+		@media (max-width:600px){
+			// what to done goes here
+		}
+	
+	
+Note: key point to keep in mind to make website responsive:
+-----------------------------------------------------------
+   1. CSS flexbox.
+   
+   2. CSS relative units.
+   
+   3. responsive typography[ writing approach ] .
+   
+   4. mobile-first approach.
+   
+   5. flexible Images and media.
+	
+
+	
+	
+	
+	
+	
+	
+
+	<<<<<<<<<<<<<<<<<<<<<<-------------------------------------->>>>>>>>>>>>>>>>>>>	
+<<<<<<<<<<<<<<<<<<<<<<<<<  Some frequently Used CSS Propertie:  >>>>>>>>>>>>>>>>>>>>>>>>>
+	<<<<<<<<<<<<<<<<<<<<<--------------------------------------->>>>>>>>>>>>>>>>>>>
+	
+>> font-family: 
+	
+	Arial – a classical font that can be used in all types of websites.
+
+	Times New Roman – an excellent option for news and educational websites.
+
+	Cambria – a versatile option that comes in regular, bold, italic, and italic bold variations.
+
+	Monaco – if you have a website about coding or gaming, it is a great font for decorative texts.
+
+	
+	
+>> 	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+End of CSS Quick Reference 
+
+*/ 
+
+
+/* get's applied to all properties of the webpage */
 * {
+	/* must: use below 4 property to normalize the webpage  */
 	margin:0%;
 	padding:0%;
-	box-sizing:border-box;	/* control the border size */
-	font-family: Sans-Serif;
+	box-sizing:border-box;
+	font-family: "Arial";
  }
+ 
+ 
+ html, body {
+	
+ }
+
 
 /* 
 	- styles for webpage header section 
