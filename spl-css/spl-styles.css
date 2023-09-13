@@ -145,27 +145,22 @@ nav a:hover{
 
 /* styles for  page content */
 
-#pagecontent {
-	width:100%;
-	min-height:100%;
-	padding: 3%;
-	background-color:white;
-	text-align: center;
-	color:black;
-	font-family:Arial;
-	font-size: 0.9rem;
+main {
+	display: flex;
+	flex: 100%;
+	flex-direction:column;
 	
+	justify-content: center;
+	align-items: center;
+	
+	padding: 4%;
+	text-align:center;
+	margin-left: 20%;
+	margin-right: 20%;
 }
 
-#whySpl {
-	width:100%;
-	min-height:100%;
-	background-color:hsla(0, 89%, 97%, 1);
-	font-family:Arial;
-	font-size: 0.9rem;
-	padding: 3%;
-	text-align:center;
-}
+
+
 
 
 
@@ -203,10 +198,7 @@ nav a:hover{
 	.sidebox {
 		width:1%;
 	}
-			
-	h1{
-		font-size:1.2rem;
-	}
+	
 	p {
 		font-size:1rem;
 		line-height: 1.5rem;
