@@ -58,7 +58,7 @@
 				
 						
 				<h3>Create a simple "hello world" python program </h3><br>
-				<p>
+				<ul>
 					<strong>step 1:</strong> open any text editor like notepad++ or notepad. <br><br>
 							
 					<strong>Step2:</strong> write below code<br>
@@ -66,39 +66,81 @@
 					<pre>	print("hello world")</pre><br>
 						
 					<strong>step3:</strong> save the file with any name but with .py extension like "helloWold.py"<br>
-				</p>		
+				</ul>		
 				<p>
 					<br><strong>Congratulation</strong>, you wrote one simplest python program which will display "hello world" 
 					once you execute this program.
 				</p>
 				<p>
-					for executing any python program python software must be installed on your system. 
+					<b>Note: </b>for executing any python program, python software must be installed on your system. 
 					so now you have to install the python software as per your system.
 				</p><br>
 					
 					
 				<h3>Python Installation for Windows PC</h3><br>
-				<p>
-					<strong>step1:</strong> 
-					Open window terminal(cmd.exe) and type "python", to check out if python is already installed and which version is installed.<br>
-					If Python is already installed then you will get a message like below</pre> 
-					<ul>
-						$ python<br>
-						Python 3.6.8 (default, Sep 10 2021, 09:13:53)<br>
-						[GCC 8.5.0 20210514 (Red Hat 8.5.0-3)] on linux<br>
-						Type "help", "copyright", "credits" or "license" for more information.<br>
-						>>><br>
-					</ul>
-				</p>
-				<p>
-					if you don't see output like above then you need to download the python software 
-					from official website of Python <a href="https://www.python.org/">https://www.python.org/</a>  for windows pc. 
-					complete python installation docs can be found here <a href="https://docs.python.org/3/using/index.html">https://docs.python.org/3/using/index.html</a> 
-				</p>
-				<p>
-					<br><strong>step2:</strong> 
-					once python software downloaded, install it on your system.
-				</p>
+					
+					<strong>step1: Verify the Python Installation</strong> 
+					<p>
+						Go to Start and enter 'cmd' in the search bar. Click Command Prompt.<br>
+						
+						Enter the following command in the command prompt:<br>
+						python --version		# checks the installed python version <br>
+						
+						<br>or <br> 
+						
+						<br>Open window terminal(cmd.exe) and type "python", to check out if python is already installed and which version is installed.<br>
+						If Python is already installed then you will get a message like below</pre> 
+						<ul style="background: lightgray">
+							$ python<br>
+							Python 3.6.8 (default, Sep 10 2021, 09:13:53)<br>
+							[GCC 8.5.0 20210514 (Red Hat 8.5.0-3)] on linux<br>
+							Type "help", "copyright", "credits" or "license" for more information.<br>
+							>>><br>
+						</ul>
+					</p>
+					<p>
+						if you don't see output like above then you need to download the python installer software 
+						from official website of Python <a href="https://www.python.org/">https://www.python.org/</a>  for windows pc. 
+						complete python installation docs can be found here <a href="https://docs.python.org/3/using/index.html">https://docs.python.org/3/using/index.html</a> 
+					</p>
+					
+					<br><strong>step2: Install Python</strong>
+					<p>
+						once python software downloaded, <a href="https://docs.python.org/3/using/windows.html"> install it on your system</a>.
+					</p>
+				
+					<br><strong>step3: Adding Python to the Environment Variables (optional)</strong> 
+					<p>
+						Skip this step if you have selected "Add Python to environment variables" during installation.
+					
+						<br><br>If you want to access Python through the command line but you didn’t add Python to your environment variables during installation, then you can still do it manually.
+					
+						<br><br>Before you start, locate the Python installation directory on your system.The following directories are examples of the default directory paths:
+					
+						<br><br><b>C:\Program Files\Pythonxv:</b> if you selected "Install for all users" during installation, 
+						then the directory will be system wide. 
+					
+						<br><br><b>C:\Users\Sammy\AppData\Local\Programs\Python\Pythonxv:</b> if you didn’t select Install for all users during installation, then the directory will be in the Windows user path.
+					
+						<br><br><b>Path Configuration:</b>
+						<ul>
+							<br><b>1.</b> Go to Start and enter advanced system settings in the search bar.
+							<br><b>2.</b> Click View advanced system settings.
+							<br><b>3.</b> In the System Properties dialog, click the Advanced tab and then click Environment Variables.
+							<br><b>4.</b> Depending on your installation:
+								<br><b>4.1.</b> If you selected Install for all users during installation, select Path from the list of System Variables and click Edit.
+								<br><b>4.2.</b> If you didn’t select Install for all users during installation, select Path from the list of User Variables and click Edit.
+							<br><b>5. </b> Click New and enter the Python directory path, then click OK until all the dialogs are closed.
+						</ul>
+					</p>
+					
+					<br><strong>step4: Verify the Python Installation</strong>
+					<p> follow step1</p>
+				
+				<h3> <br>Run The Python Script </h3>
+				<p> Once python successfully Installed on your PC, now you are ready to execute any pyhton script </p>
+				<p> to run any python script just open the command prompt (cmd.exe) in your current working directory and type 'python scriptName.py' </p>
+				
 			</div>
 		  
 			<div class="main_right">
