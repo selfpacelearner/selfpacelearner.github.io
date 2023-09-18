@@ -133,13 +133,15 @@ main {
 .main_left {	
 	width:20%;
 }
-.main_middle {	
+.main_middle {
 	width:60%;
 	padding:1%;
 }
 .main_right {	
 	width:20%;
 }
+
+
 
 /* footer style  */
 footer {
