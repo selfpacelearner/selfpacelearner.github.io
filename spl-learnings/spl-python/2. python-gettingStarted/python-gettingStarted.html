@@ -48,100 +48,165 @@
 			<div class="main_left">
 				<!-- no content -->
 			</div>
-				
-		  
+		
 			<div class="main_middle">
-			
 				<h3> Python - Getting started </h3>
-				<p>
-					Python is much simpler to programme in. Any basic plain text editor, such as 
-					notepad or notepad++, can be used to create Python programs.
-				</p><br>
-				
-						
-				<h3>Create a simple "hello world" python program </h3><br>
-				<ul>
-					<strong>step 1:</strong> open any text editor like notepad++ or notepad. <br><br>
-							
+				<p>Python is much simpler to programme in. Any basic plain text editor, such as 
+					notepad or notepad++, can be used to create Python programs.</p><br>
+			
+			
+				<!-- Create a simple Python Program -->
+				<h3>Create a simple "hello world" python program </h3>
+				<ul style="background:lightgray;padding:2%;">
+					<strong>Step1:</strong> open any text editor like notepad++ | notepad [Windows] or vim | nano [Linux] or TextEdit [macOS]. <br><br>
 					<strong>Step2:</strong> write below code<br>
-							
-					<pre>	print("hello world")</pre><br>
-						
-					<strong>step3:</strong> save the file with any name but with .py extension like "helloWold.py"<br>
-				</ul>		
-				<p>
-					<br><strong>Congratulation</strong>, you wrote one simplest python program which will display "hello world" 
-					once you execute this program.
-				</p>
-				<p>
-					<b>Note: </b>for executing any python program, python software must be installed on your system. 
-					so now you have to install the python software as per your system.
+					<pre>	  print("hello world")</pre><br>
+					<strong>Step3:</strong> save the file with any name but with .py extension like "helloWold.py"<br>
+				</ul>
+				
+				<p><br><strong>Congratulations</strong>, you wrote one simplest python program which will display "hello world" 
+				once you execute this program. 
+			
+				<br><br>For executing any python program, python software must be installed on your system. 
+				so now you have to install the python software as per your system. 
+				
+				<br><br>Before Installing python software first check Python is already Installed on your system?
 				</p><br>
-					
-					
-				<h3>Python Installation for Windows PC</h3><br>
-					
-					<strong>step1: Verify the Python Installation</strong> 
-					<p>
-						Go to Start and enter 'cmd' in the search bar. Click Command Prompt.<br>
-						
-						Enter the following command in the command prompt:<br>
-						python --version		# checks the installed python version <br>
-						
-						<br>or <br> 
-						
-						<br>Open window terminal(cmd.exe) and type "python", to check out if python is already installed and which version is installed.<br>
-						If Python is already installed then you will get a message like below</pre> 
-						<ul style="background: lightgray">
-							$ python<br>
-							Python 3.6.8 (default, Sep 10 2021, 09:13:53)<br>
-							[GCC 8.5.0 20210514 (Red Hat 8.5.0-3)] on linux<br>
-							Type "help", "copyright", "credits" or "license" for more information.<br>
-							>>><br>
-						</ul>
-					</p>
-					<p>
-						if you don't see output like above then you need to download the python installer software 
-						from official website of Python <a href="https://www.python.org/">https://www.python.org/</a>  for windows pc. 
-						complete python installation docs can be found here <a href="https://docs.python.org/3/using/index.html">https://docs.python.org/3/using/index.html</a> 
-					</p>
-					
-					<br><strong>step2: Install Python</strong>
-					<p>
-						once python software downloaded, <a href="https://docs.python.org/3/using/windows.html"> install it on your system</a>.
-					</p>
 				
-					<br><strong>step3: Adding Python to the Environment Variables (optional)</strong> 
-					<p>
-						Skip this step if you have selected "Add Python to environment variables" during installation.
-					
-						<br><br>If you want to access Python through the command line but you didn’t add Python to your environment variables during installation, then you can still do it manually.
-					
-						<br><br>Before you start, locate the Python installation directory on your system.The following directories are examples of the default directory paths:
-					
-						<br><br><b>C:\Program Files\Pythonxv:</b> if you selected "Install for all users" during installation, 
-						then the directory will be system wide. 
-					
-						<br><br><b>C:\Users\Sammy\AppData\Local\Programs\Python\Pythonxv:</b> if you didn’t select Install for all users during installation, then the directory will be in the Windows user path.
-					
-						<br><br><b>Path Configuration:</b>
-						<ul>
-							<br><b>1.</b> Go to Start and enter advanced system settings in the search bar.
-							<br><b>2.</b> Click View advanced system settings.
-							<br><b>3.</b> In the System Properties dialog, click the Advanced tab and then click Environment Variables.
-							<br><b>4.</b> Depending on your installation:
-								<br><b>4.1.</b> If you selected Install for all users during installation, select Path from the list of System Variables and click Edit.
-								<br><b>4.2.</b> If you didn’t select Install for all users during installation, select Path from the list of User Variables and click Edit.
-							<br><b>5. </b> Click New and enter the Python directory path, then click OK until all the dialogs are closed.
-						</ul>
-					</p>
-					
-					<br><strong>step4: Verify the Python Installation</strong>
-					<p> follow step1</p>
+			
+				<!-- Check Python is Already Installed? -->
+				<h3> Verify Python is already Installed on your system?</h3>
+				<p>To verify if Python is installed on your system, and to check its version, you can use the following steps:</p>
 				
+				<h4>For Windows:</h4>
+				<ul>
+					<p>1. Open the Command Prompt: Press Win + R, type "cmd", and press Enter.</p>
+					
+					<p>2. Type the following command and press Enter:</p>
+					<ul style="background:lightgray;padding:2%;">
+						<pre>1. python --version	# This will display the installed Python version if it's already installed..</pre><br>
+						<pre>2. python			# To enter the Python interpreter.</pre>
+					</ul>
+					<p>If Python is already installed then you will get a message like below</p>
+					<ul style="background:lightgray;padding:2%;">
+						$ python<br>
+						Python 3.6.8 (default, Sep 10 2021, 09:13:53)<br>
+						[GCC 8.5.0 20210514 (Red Hat 8.5.0-3)] on linux<br>
+						Type "help", "copyright", "credits" or "license" for more information.<br>
+						>>><br>
+					</ul>
+					<p>if you don't see output like above then you need to Install the python installer software on your system.</p>
+				</ul>
+				
+				<h4>For macOS and Linux:</h4>	
+				<ul>
+					<p>1. Open terminal.usually terminal application can be found in your applications or by searching for "Terminal" in the search bar.</p>
+					<p>2. Type the following command and press Enter:</p>
+					<ul style="background:lightgray;padding:2%;">
+						<pre>python --version		# This will display the installed Python version if it's already installed.</pre>
+						<pre>python					# To enter the Python interpreter.</pre>
+					</ul>
+					<p>You should see the Python prompt, indicating that Python is installed. if not  then you need to Install the python installer software on your system</p>
+				</ul>
+
+
+				<!-- Python Installation -->
+				<br><h3>Python Installation: </h3>
+				<p>To install Python on your system, follow these steps:</p>
+				
+				<h4>For Windows:</h4>
+				<ul>
+					<b>1. Download Python Installer:</b>
+					<ul>
+						<p>Go to the official Python website at <a href="https://www.python.org/downloads/windows/">Python Installer for Windows</a><p>
+						<p>You'll see the latest version of Python listed. Make sure to download the Python 3.x version (e.g., Python 3.9.6) as Python 2.x is no longer supported.</p>
+					</ul>
+					
+					<b>2. Run the Installer:</b>
+					<ul>
+						<p>Double-click the downloaded installer to run it. On the initial installation screen, make sure to check the box that says "Add Python x.x to PATH." This option is essential for easily running Python from the command line.</p>
+					</ul>
+					
+					<b>3. (Optional) Customize Installation:</b>
+					<ul>
+						<p>Click on the "Customize installation" button if you want to customize the installation directory or select optional features. Most users can leave the defaults selected.</p>
+					</ul>
+					
+					<b>4. Install Python:</b>
+					<ul>
+						<p>Click the "Install Now" button to start the installation. The installer will copy Python files to your system.</p>
+					</ul>
+					
+					<b>5. Verify the Installation:</b>
+					<ul>
+						<p>Once the installation is complete, open the Command Prompt by pressing Win + R, typing "cmd," and pressing Enter.
+						Type the following command to verify that Python is installed and check its version: <b>python --version</b></p>
+						<p>If Python is installed, you'll see the python version number. If not, you'll receive an error message..</p>
+					</ul>
+					
+					<b>6. Testing Python:</b>
+					<ul>
+						<p>To test Python, you can enter the Python interactive shell. Type python and press Enter. You should see the Python prompt (>>>) indicating that you are in the Python shell.</p>
+
+						<p>To exit the Python shell, simply type exit() and press Enter.</p>
+					</ul>
+					
+					<p><strong>Congratulations!</strong> You have successfully installed Python on your Windows system. You can now start using Python for scripting and programming tasks. Remember to keep Python and any installed packages up to date for the best experience.</p>
+				</ul>
+				
+				<h4>For Linux:</h4>
+				<ul>
+					<p> many Linux distributions come with Python pre-installed. </p>
+					<ul style="background:lightgray;padding:2%;">
+						<pre>#On Debian/Ubuntu</pre>
+						<pre>sudo apt install python3</pre><br>
+						<pre>#On Red Hat/CentOS</pre>
+						<pre>sudo yum install python3</pre>
+					</ul>
+				</ul>
+				
+				<h4>For Mac:</h4>
+				<ul>
+					<p>macOS typically comes with a version of Python pre-installed (usually Python 2.x). 
+					It's recommended to use Python 3.x for new projects as Python 2 is no longer maintained.</p>
+					<ul style="background:lightgray;padding:2%;">
+						<p>brew install python</p>
+					</ul>
+				</ul>
+				
+				<br><p>complete python installation docs can be found here <a href="https://docs.python.org/3/using/index.html">https://docs.python.org/3/using/index.html</a></p>
+				
+				
+				<!-- Run Python Script -->
 				<h3> <br>Run The Python Script </h3>
 				<p> Once python successfully Installed on your PC, now you are ready to execute any pyhton script </p>
 				<p> to run any python script just open the command prompt (cmd.exe) in your current working directory and type 'python scriptName.py' </p>
+				
+				
+				<!-- Adding Python to the Environment Variables -->
+				<br><h3>(optional) Adding Python to the Environment Variables </h3> 
+				<p>Skip this step if you have selected "Add Python to environment variables" during installation.
+					
+				<br><br>If you want to access Python through the command line but you didn’t add Python to your environment variables during installation, then you can still do it manually.
+					
+				<br><br>Before you start, locate the Python installation directory on your system.The following directories are examples of the default directory paths:
+					
+				<br><br><b>C:\Program Files\Pythonxv:</b> if you selected "Install for all users" during installation, 
+				then the directory will be system wide. 
+					
+				<br><br><b>C:\Users\Sammy\AppData\Local\Programs\Python\Pythonxv:</b> if you didn’t select Install for all users during installation, then the directory will be in the Windows user path.
+					
+				<br><br><b>Path Configuration:</b>
+				<ul>
+					<br><b>1.</b> Go to Start and enter advanced system settings in the search bar.
+					<br><b>2.</b> Click View advanced system settings.
+					<br><b>3.</b> In the System Properties dialog, click the Advanced tab and then click Environment Variables.
+					<br><b>4.</b> Depending on your installation:
+					<br><b>4.1.</b> If you selected Install for all users during installation, select Path from the list of System Variables and click Edit.
+					<br><b>4.2.</b> If you didn’t select Install for all users during installation, select Path from the list of User Variables and click Edit.
+					<br><b>5. </b> Click New and enter the Python directory path, then click OK until all the dialogs are closed.
+					</ul>
+				</p>
 				
 			</div>
 		  
