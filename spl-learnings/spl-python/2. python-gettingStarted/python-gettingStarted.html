@@ -183,8 +183,82 @@
 				<p> to run any python script just open the command prompt (cmd.exe) in your current working directory and type 'python scriptName.py' </p>
 				
 				
+				<!-- virtual environment using venv[in-built]-->
+				<br><h3>virtual environment steup using venv[in-built]</h3>
+				<div>
+					<p> A virtual environment, often abbreviated as "virtual env" or "venv," is a self-contained environment within a computer system that allows you to install and manage software packages and libraries independently of the system's global environment. Virtual environments are commonly used in software development to isolate project-specific dependencies, ensuring that different projects can have their own set of libraries and packages without interfering with each other.</p>
+				</div>
+				
+				<br><b>key points about virtual environments</b>
+				<div>
+					<ul>
+						<p><strong>1. Isolation:</strong> Virtual environments provide isolation for Python or other programming language installations and libraries. 
+						This means you can have different versions of libraries or packages installed for different projects, preventing conflicts.</p>
+
+						<p><strong>2. Dependency Management:</strong> You can easily manage project-specific dependencies within a virtual environment. 
+						You can install, update, and remove packages as needed without affecting the global system or other projects.</p>
+
+						<p><strong>3. Portability:</strong> Virtual environments are portable. You can create a virtual environment on one system,
+						and as long as you have the environment configuration saved (typically in a requirements.txt file), 
+						you can recreate the same environment on another system.</p>
+
+						<p><strong>4. Version Compatibility:</strong> Virtual environments help ensure version compatibility between packages. 
+						You can specify the exact versions of libraries your project requires.</p>
+
+						<p><strong>5. Cleaner Development:</strong> Using virtual environments keeps your development 
+						environment clean and avoids cluttering your global Python installation with project-specific packages.</p>
+					</ul>
+				</div>
+				
+				<br><b>Typical workflow for working with virtual environments in Python</b>
+				<ul>
+					<p>1. Create a virtual environment for your project.</p>
+
+					<p>2. Activate the virtual environment.</p>
+
+					<p>3. Install the required packages using pip within the virtual environment.</p>
+
+					<p>4. Develop and run your Python project within the activated virtual environment.</p>
+
+					<p>5. When done, deactivate the virtual environment.</p>
+				</ul>
+				<p>Virtual environments are a fundamental tool for Python developers to manage dependencies and 
+				maintain project-specific environments, making it easier to develop and distribute Python projects without 
+				worrying about conflicts or dependencies on the system-wide Python installation.</p>	
+				
+				<ul style="background:lightgray;padding:2%;">
+					<p>1. Create a virtual environment in a directory (e.g., 'myenv')</p>
+					<pre>	>> python -m venv myenv</pre><br>
+
+					<p>2. Activate the virtual environment</p>
+					<pre>	>> myenv\Scripts\activate	# on Windows</pre>
+					<pre>   	>> source myenv/bin/activate	# on macOS and Linux</pre>
+					<ul>
+						<p>You need to activate a virtual environment to use it. When activated, it changes the shell's PATH environment variable 
+						to point to the Python interpreter and packages within the virtual environment. 
+						This allows you to use the isolated environment for running your Python scripts and applications.</p>
+					</ul><br>
+					
+					<p>3. Install Required packages within the virtual environment using 'pip'</p>
+					<pre>	>> pip install package-name</pre><br>
+
+					<p>4. Deactivate the virtual environment</p>
+					<pre>	>> deactivate </pre><br>
+
+					<b>Note:</b> 
+					<ul>
+						<p>- don't forget to deactivate the virtual environment when you're finished work to return to the system-wide(global) Python environment.</p>
+
+						<p>- Remember that virtual environments are not limited to Python. Similar concepts and tools exist for other programming languages, 
+						  such as 'conda' for managing environments in the data science and scientific computing fields. 
+						  Virtual environments are a best practice in software development for maintaining clean, reproducible, and isolated project environments.</p>
+					</ul>
+				</ul>
+				
+				
 				<!-- Adding Python to the Environment Variables -->
-				<br><h3>(optional) Adding Python to the Environment Variables </h3> 
+				<br><h3>(optional) Adding Python to the Environment Variables </h3>
+				<b>For windows:</b>
 				<p>Skip this step if you have selected "Add Python to environment variables" during installation.
 					
 				<br><br>If you want to access Python through the command line but you didn’t add Python to your environment variables during installation, then you can still do it manually.
